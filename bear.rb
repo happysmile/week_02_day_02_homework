@@ -21,7 +21,7 @@ class Bear
     for fish in fish_in_river
       @stomach.push(fish)
     end
-    fish_in_river.delete(fish)
+    river.clear_fish()
   end
 
   def roar()
